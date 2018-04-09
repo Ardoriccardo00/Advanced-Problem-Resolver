@@ -36,6 +36,9 @@
             this.howToUseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.donateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.whatDoesAPSStandsForToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.myGitHubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.linkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.goToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,7 +92,8 @@
             this.infoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.howToUseToolStripMenuItem,
             this.donateToolStripMenuItem,
-            this.whatDoesAPSStandsForToolStripMenuItem});
+            this.whatDoesAPSStandsForToolStripMenuItem,
+            this.myGitHubToolStripMenuItem});
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
             this.infoToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.infoToolStripMenuItem.Text = "Info";
@@ -97,7 +101,7 @@
             // howToUseToolStripMenuItem
             // 
             this.howToUseToolStripMenuItem.Name = "howToUseToolStripMenuItem";
-            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
             this.howToUseToolStripMenuItem.Text = "How to use";
             this.howToUseToolStripMenuItem.Click += new System.EventHandler(this.howToUseToolStripMenuItem_Click);
             // 
@@ -114,6 +118,29 @@
             this.whatDoesAPSStandsForToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
             this.whatDoesAPSStandsForToolStripMenuItem.Text = "What does \"APS\" stands for?";
             this.whatDoesAPSStandsForToolStripMenuItem.Click += new System.EventHandler(this.whatDoesAPSStandsForToolStripMenuItem_Click);
+            // 
+            // myGitHubToolStripMenuItem
+            // 
+            this.myGitHubToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.linkToolStripMenuItem,
+            this.goToolStripMenuItem});
+            this.myGitHubToolStripMenuItem.Name = "myGitHubToolStripMenuItem";
+            this.myGitHubToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
+            this.myGitHubToolStripMenuItem.Text = "My gitHub";
+            // 
+            // linkToolStripMenuItem
+            // 
+            this.linkToolStripMenuItem.Name = "linkToolStripMenuItem";
+            this.linkToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.linkToolStripMenuItem.Text = "https://github.com/Ardoriccardo00";
+            this.linkToolStripMenuItem.Click += new System.EventHandler(this.linkToolStripMenuItem_Click);
+            // 
+            // goToolStripMenuItem
+            // 
+            this.goToolStripMenuItem.Name = "goToolStripMenuItem";
+            this.goToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.goToolStripMenuItem.Text = "Go";
+            this.goToolStripMenuItem.Click += new System.EventHandler(this.goToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -144,6 +171,9 @@
         private System.Windows.Forms.ToolStripMenuItem howToUseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem donateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem whatDoesAPSStandsForToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem myGitHubToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem linkToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem goToolStripMenuItem;
     }
 }
 
