@@ -25,17 +25,29 @@ namespace ProblemResolver
 
         private void start_Click(object sender, EventArgs e)
         {
+            System.Diagnostics.Process.Start("shutdown","/r /t 10");
+            button1.Visible = true;
+            MessageBox.Show("We are currently resolving your problems, in 10 seconds your computer is going to shutdown, press the emergency button to stop the process");
+        }
 
-            System.Diagnostics.Process.Start("shutdown","/s /t 100");
+        private void howToUseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Just close all your programs and let the APS do it's job");
+        }
 
-            //Process test = new Process();
-            //test.StartInfo.FileName = "ipconfig";
-            //test.StartInfo.UseShellExecute = false;
-            //test.StartInfo.Arguments = "/all";
-            //test.StartInfo.RedirectStandardOutput = true;
-            //test.Start();
-            //textBox1.Text = test.StandardOutput.ReadToEnd();
+        private void whatDoesAPSStandsForToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Advanced problem resolver, DUH...");
+        }
 
+        private void donateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You can donate some dogecoins @ DLL5orKG1eNJ7omGvcjaJkEi9jq9a2o6Ce ");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("shutdown", "-a");
         }
     }
 }
