@@ -32,12 +32,12 @@ namespace ProblemResolver
 
         private void howToUseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Just close all your programs and let the APS do it's job.");
+            MessageBox.Show("Just close all your programs and let the APR do it's job.");
         }
 
         private void whatDoesAPSStandsForToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Advanced problem resolver, DUH...");
+            MessageBox.Show("Advanced Problem Resolver, DUH...");
         }
 
         private void donateToolStripMenuItem_Click(object sender, EventArgs e)
@@ -48,6 +48,7 @@ namespace ProblemResolver
         private void button1_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("shutdown", "-a");
+            button1.Visible = false;
         }
 
         private void goToolStripMenuItem_Click(object sender, EventArgs e)
@@ -62,6 +63,11 @@ namespace ProblemResolver
         private void linkToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void myGitHubToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Ardoriccardo00");
         }
     }
 }
