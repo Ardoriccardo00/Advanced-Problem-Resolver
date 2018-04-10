@@ -15,6 +15,7 @@ namespace ProblemResolverPremium
         int Timer;
         string FileName;
         string IP;
+        int contatore = 0;
 
         public Form1()
         {
@@ -35,12 +36,19 @@ namespace ProblemResolverPremium
         {
             Timer = int.Parse(textTimer.Text);
             MessageBox.Show(Convert.ToString(Timer));
-            System.Diagnostics.Process.Start("shutdown", "/r /t Timer");
+            Counter.Enabled = true;
+            if (contatore == Timer) { System.Diagnostics.Process.Start("shutdown", "/r /t 0"); }
+            
         }
 
         private void StopButton_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("shutdown", "-a");
+        }
+
+        private void Counter_Tick(object sender, EventArgs e)
+        {
+            contatore = contatore + 1;
         }
     }
 }

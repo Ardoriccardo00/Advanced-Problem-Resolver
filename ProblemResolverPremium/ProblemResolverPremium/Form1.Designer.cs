@@ -59,6 +59,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Counter = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -313,6 +314,11 @@
             this.textBox4.TabIndex = 13;
             this.textBox4.Visible = false;
             // 
+            // Counter
+            // 
+            this.Counter.Interval = 1000;
+            this.Counter.Tick += new System.EventHandler(this.Counter_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -374,6 +380,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Timer Counter;
     }
 }
 
