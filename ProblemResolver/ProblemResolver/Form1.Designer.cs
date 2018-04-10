@@ -37,6 +37,7 @@
             this.donateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.whatDoesAPSStandsForToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.myGitHubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +56,7 @@
             this.start.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.start.Location = new System.Drawing.Point(179, 158);
             this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(165, 103);
+            this.start.Size = new System.Drawing.Size(182, 103);
             this.start.TabIndex = 1;
             this.start.Text = "START";
             this.start.UseVisualStyleBackColor = true;
@@ -66,9 +67,9 @@
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(207, 327);
+            this.button1.Location = new System.Drawing.Point(210, 301);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 51);
+            this.button1.Size = new System.Drawing.Size(123, 68);
             this.button1.TabIndex = 2;
             this.button1.Text = "HOLY CRAP STOP!!!!!!!";
             this.button1.UseVisualStyleBackColor = false;
@@ -124,11 +125,22 @@
             this.myGitHubToolStripMenuItem.Text = "My gitHub";
             this.myGitHubToolStripMenuItem.Click += new System.EventHandler(this.myGitHubToolStripMenuItem_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(174, 103);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(187, 25);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Standard Edition";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 411);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.start);
             this.Controls.Add(this.label1);
@@ -154,6 +166,7 @@
         private System.Windows.Forms.ToolStripMenuItem donateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem whatDoesAPSStandsForToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem myGitHubToolStripMenuItem;
+        private System.Windows.Forms.Label label2;
     }
 }
 
